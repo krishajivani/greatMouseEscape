@@ -1,40 +1,8 @@
+## The Great Mouse Escape
+“The Great Mouse Escape” is inspired by the Asteroids arcade game. The objective of the game is for the player (mouse) to evade the particles for as long as possible. If the mouse collides with a particle, the game ends and a score equivalent to the number of seconds survived is displayed on the screen. The slider controls the difficulty level; the lower the setting, the slower the particles move. 
 
+If particles collide with one another, their colors combine (average rgb values together) to form a new color, the smaller particle disappears, and the large particle’s trajectory is continued. When a particle is within a certain radius of the player, the player’s “gravity” affects its trajectory. This makes it more challenging for the player to evade the particles that are close to it, making the game all the more interesting!
 
-This starter code has a few example starter scenes for inspiration. You can run them by uncommenting different choices of scene model and controller in [CreativeAppComponent](./src/Creative1/C1/CreativeAppComponent.tsx) you will find the following:
-
-
-```typescript
-/**
- * This would be good starter code for a project like the pyramid example we provide. It even has some of the controls set up already.
- */
-const SceneModel = new CustomSceneModel();
-SceneModel.confirmInitialized();
-const SceneController = new CustomSceneController(SceneModel);
-
-/**
- * This example is an empty scene. Room to fill with your hopes and dreams...
- */
-const SceneModel = new EmptySceneModel();
-SceneModel.confirmInitialized();
-const SceneController = new EmptySceneController(SceneModel);
-
-
-/**
- * This would be a good project for procedural / animated curves
- */
-const SceneModel = new CurveSceneModel();
-SceneModel.confirmInitialized();
-const SceneController = new CurveSceneController(SceneModel);
-
-/**
- * This is a starter particle system project. It shows you how to render and position particles.
- * You just have to write code to make them move in interesting ways.
- */
-const SceneModel = new ParticleSystemSceneModel();
-SceneModel.confirmInitialized();
-const SceneController = new ParticleSystemSceneController(SceneModel);
-```
-
-
-Check back on the [assignment docs](https://www.cs.cornell.edu/courses/cs4620/2022fa/assignments/) for an overview of the helper examples and videos of a couple of possible features you could implement. We will try to update the docs with answers to questions that come up during the week.
-
+## Collaborators/Credits
+* Co-developed with Joan Chirinos
+* Built with Anigraph library - CG library created for the Cornell CG course
